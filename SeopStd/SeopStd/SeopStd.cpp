@@ -49,6 +49,12 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     MainUpdate Main;
     Main.Start();
 
+    // 언사인드:U,__int64 =>64비트int형
+    // GetTickCount: 1000분의 1초를 반환한다.
+    //               시간이 얼마나 흘렀는가를 반환한다.
+    //               지금은? ->컴퓨터가 켜진시간
+    ULONGLONG Time = GetTickCount64();
+
     // 기본 메시지 루프입니다:
     while (msg.message!= WM_QUIT)
     {
@@ -59,8 +65,14 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         }
         else 
         {
-            Main.Update();
-            Main.Render();
+            //** 시간이 반복되는 루프
+            if (Time < GetTickCount64())
+            {
+                Time = GetTickCount64();
+
+                Main.Update();
+                Main.Render();
+            }
         }
     }
 

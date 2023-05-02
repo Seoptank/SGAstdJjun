@@ -22,6 +22,12 @@
     <Filter Include="소스 파일\MainUpdate">
       <UniqueIdentifier>{556baa6a-31fa-43b4-9ba1-1828cf0ca8ed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Object">
+      <UniqueIdentifier>{045d2d93-fbfb-4442-b430-f40a78de633e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Player">
+      <UniqueIdentifier>{bbf7392a-3153-430d-b778-a81ed5ffd572}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -45,6 +51,15 @@
     <ClInclude Include="Include.h">
       <Filter>헤더 파일\Include</Filter>
     </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>소스 파일\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>헤더 파일\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일\Object\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SeopStd.cpp">
@@ -52,6 +67,12 @@
     </ClCompile>
     <ClCompile Include="MainUpdate.cpp">
       <Filter>소스 파일\MainUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>소스 파일\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\Object\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
