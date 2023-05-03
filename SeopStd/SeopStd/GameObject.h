@@ -5,7 +5,7 @@ class GameObject
 {
 protected:
 	Transform transform;
-	int Speed;
+	float Speed;
 
 //** virtual: 가상 함수를 만들기 위한 조건
 //            실제 함수는 존재하지 않고 가상으로만 존재
@@ -18,13 +18,27 @@ protected:
 // 우리가 Unity에서 Start등의 함수를 쓰는것과 같은 개념
 
 public:
-	virtual void Start() = 0;
-	virtual void Update() = 0;
-	virtual void Render(HDC hdc) = 0;
-	virtual void Destroy() = 0;
+	virtual void Start()PURE;
+	virtual void Start(Vector3 _position)PURE;
+	virtual int Update()PURE;
+	virtual void Render(HDC hdc)PURE;
+	virtual void Destroy()PURE;
+	//PURE : "=0"이라는 뜻임
+
+//Getter,Setter
+public:
+	Transform GetTransform() { return transform; }
+	//void SetTransform(Transform _transform) { transform = _transform; }
+
+	Vector3 GetPosition() { return transform.Position; }
+	void SetPosition(Vector3 _position) 
+	{ transform.Position = _position; }
+
 
 public:
 	GameObject();
-	~GameObject();
+	virtual ~GameObject();
+	//**소멸할때도 GameObject는소멸되나 Player가 소멸되지 않아 힙에 계속 찬다.
+	// 그래서 소멸자에 virtual을 붙여 문제를 해결한다.
 };
 

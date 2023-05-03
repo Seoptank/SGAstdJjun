@@ -4,7 +4,6 @@
 #include "framework.h"
 #include "SeopStd.h"
 #include "MainUpdate.h"
-#include "Include.h"
 
 #define MAX_LOADSTRING 100
 
@@ -75,7 +74,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             }
         }
     }
-
 }
 
 
@@ -121,7 +119,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    hInst = hInstance; // 인스턴스 핸들을 전역 변수에 저장합니다.
 
    HWND hWnd = g_hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
-      CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
+      CW_USEDEFAULT, 0, WIDTH, HEIGHT, nullptr, nullptr, hInstance, nullptr);
 
    if (!hWnd)
    {
