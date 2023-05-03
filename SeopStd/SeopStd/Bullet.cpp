@@ -51,3 +51,5 @@ void Bullet::Destroy()
 {
 
 }
+
+//숙제: 충돌하면 사라지게
