@@ -7,6 +7,7 @@ protected:
 	Transform transform;
 	float Speed;
 
+
 //** virtual: 가상 함수를 만들기 위한 조건
 //            실제 함수는 존재하지 않고 가상으로만 존재
 //** =0     : 순수하게 가상의 함수로만 존재하기 위한 작업

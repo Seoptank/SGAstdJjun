@@ -1,6 +1,7 @@
 #pragma once
 
 
+
 typedef struct tagVector3
 {
 	float x, y, z;
@@ -20,4 +21,9 @@ typedef struct tagTransform
 	Vector3 Rotation;
 	Vector3 Scale;
 }Transform;
+
+
+
+
+
 

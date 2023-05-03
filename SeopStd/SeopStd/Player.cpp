@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "Bullet.h"
 
 Player::Player()
 {
@@ -10,7 +11,7 @@ Player::~Player()
 
 void Player::Start()
 {
-    transform.Position = Vector3(700.0f, 350.0f, 0.0f);
+    transform.Position = Vector3(WIDTH*0.5f,HEIGHT*0.5f, 0.0f);
     transform.Rotation = Vector3(0.0f, 0.0f, 0.0f);
     transform.Scale = Vector3(100.0f, 100.0f, 0.0f);
 
@@ -19,15 +20,6 @@ void Player::Start()
     //            포인터를 표현하는 값 중에 "널을 표현한 값"이다.라고 할 수 있습니다.
     for (int i = 0; i < BULLETCOUNT; ++i)
         BulletList[i] = nullptr;
-}
-
-void Player::Start(Vector3 _position)
-{
-    transform.Position = Vector3(WIDTH * 0.5f, HEIGHT * 0.5f, 0.0f);
-    transform.Rotation = Vector3(0.0f, 0.0f, 0.0f);
-    transform.Scale = Vector3(100.0f, 100.0f, 0.0f);
-
-    Speed = 5.0f;
 }
 
 int Player::Update()

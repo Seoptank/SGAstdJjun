@@ -32,7 +32,7 @@ int Bullet::Update()
 	
 	transform.Position.x += Speed;
 
-	if (transform.Position.x > 1420.0f)
+	if (transform.Position.x > WIDTH)
 	{
 		return 1;
 	}
@@ -40,7 +40,7 @@ int Bullet::Update()
 }
 void Bullet::Render(HDC hdc)
 {
-	Rectangle(hdc,
+	Ellipse(hdc,
 		int(transform.Position.x - (transform.Scale.x * 0.5f)),
 		int(transform.Position.y - (transform.Scale.y * 0.5f)),
 		int(transform.Position.x + (transform.Scale.x * 0.5f)),

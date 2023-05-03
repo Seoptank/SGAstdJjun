@@ -1,4 +1,5 @@
 #include "Enemy.h"
+#include "Bullet.h"
 
 Enemy::Enemy()
 {
@@ -37,6 +38,16 @@ void Enemy::Render(HDC hdc)
 }
 void Enemy::Destroy()
 {
-
+    
 }
+
+double Enemy::Distance(Transform _e, Transform _b)
+{
+    float distance;
+    _e.Position = Enemy::Start().transform.positions
+    distance = sqrt(pow())
+    
+}
+
+
 

@@ -12,6 +12,7 @@ public:
 
 	//** override:***********************공부하기***********************
 	//			  override붙이면 함수 이름변경시 상위에 같은 함수 이름이 없으면 오류남
+
 public:
 	Bullet();
 	virtual ~Bullet();
