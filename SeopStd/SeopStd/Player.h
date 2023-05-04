@@ -6,7 +6,6 @@
 class Player: public GameObject
 {
 private:
-	GameObject* BulletList[BULLETCOUNT];
 public:
 	 virtual void Start()override;
 	 virtual void Start(Vector3 _position)override 

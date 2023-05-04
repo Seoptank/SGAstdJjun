@@ -34,6 +34,30 @@
     <Filter Include="소스 파일\Object\Enemy">
       <UniqueIdentifier>{4ce893b0-5d51-4864-b2cc-c479d1a6a08c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Manager">
+      <UniqueIdentifier>{4bdd23b0-5c7e-4ec5-950b-6a219bf51616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Manager\ObjectManager">
+      <UniqueIdentifier>{235e5a82-0c1e-499b-a038-210835298b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Manager\SceneManager">
+      <UniqueIdentifier>{d56b382c-d787-488e-abac-0611444c352b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Manager\SceneManager\CollisionManager">
+      <UniqueIdentifier>{4cfc24a1-6d1b-44c8-8ef8-83fa14fc4d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene">
+      <UniqueIdentifier>{e2334165-54ee-4684-bcf8-19113f97954c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\Stage">
+      <UniqueIdentifier>{309e2332-799b-4fcc-b257-4577e5d1a2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\Manu">
+      <UniqueIdentifier>{8d058ee0-7a8b-4ca2-812b-b07720c99c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\Logo">
+      <UniqueIdentifier>{0dddeebf-a24f-4791-8fbd-0e1f96562b14}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -72,6 +96,30 @@
     <ClInclude Include="Enemy.h">
       <Filter>소스 파일\Object\Enemy</Filter>
     </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>소스 파일\Manager\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>소스 파일\Manager\SceneManager\CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>소스 파일\Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>헤더 파일\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>소스 파일\Scene\Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Manu.h">
+      <Filter>소스 파일\Scene\Manu</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>소스 파일\Scene\Stage</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SeopStd.cpp">
@@ -91,6 +139,24 @@
     </ClCompile>
     <ClCompile Include="Enemy.cpp">
       <Filter>소스 파일\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\Manager\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>소스 파일\Scene\Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Manu.cpp">
+      <Filter>소스 파일\Scene\Manu</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>소스 파일\Scene\Stage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

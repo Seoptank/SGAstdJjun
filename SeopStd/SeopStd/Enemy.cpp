@@ -18,6 +18,8 @@ void Enemy::Start()
     transform.Scale = Vector3(150.0f, 150.0f, 0.0f);
 
     Speed = 0.5f;
+
+    key = "Enemy";
 }
 int Enemy::Update()
 {
@@ -41,13 +43,7 @@ void Enemy::Destroy()
     
 }
 
-double Enemy::Distance(Transform _e, Transform _b)
-{
-    float distance;
-    _e.Position = Enemy::Start().transform.positions
-    distance = sqrt(pow())
-    
-}
+
 
 
 

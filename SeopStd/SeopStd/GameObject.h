@@ -6,6 +6,7 @@ class GameObject
 protected:
 	Transform transform;
 	float Speed;
+	string key;
 
 
 //** virtual: 가상 함수를 만들기 위한 조건
@@ -28,12 +29,22 @@ public:
 
 //Getter,Setter
 public:
+	string GetKey() { return key; }
+
 	Transform GetTransform() { return transform; }
 	//void SetTransform(Transform _transform) { transform = _transform; }
 
 	Vector3 GetPosition() { return transform.Position; }
 	void SetPosition(Vector3 _position) 
 	{ transform.Position = _position; }
+
+	Vector3 GetScale() { return transform.Scale; }
+	void SetScale(Vector3 _scale)
+	{
+		transform.Scale= _scale;
+	}
+
+	
 
 
 public:

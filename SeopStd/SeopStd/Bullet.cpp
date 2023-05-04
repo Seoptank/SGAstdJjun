@@ -15,7 +15,9 @@ void Bullet::Start()
 	transform.Rotation = Vector3(0.0f, 0.0f, 0.0f);
 	transform.Scale = Vector3(30.0f, 30.0f, 0.0f);
 	
+	key = "Bullet";
 	Speed = 15.0f;
+
 }
 
 void Bullet::Start(Vector3 _position) 
@@ -25,6 +27,8 @@ void Bullet::Start(Vector3 _position)
 	transform.Scale = Vector3(30.0f, 30.0f, 0.0f);
 
 	Speed = 15.0f;
+
+	key = "Bullet";
 }
 
 int Bullet::Update()
